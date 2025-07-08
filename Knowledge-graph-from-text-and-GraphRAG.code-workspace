@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Knowledge-graph-from-text-and-GraphRAG",
+			"path": "."
+		},
+		{
+			"name": "test_data",
+			"path": "../Build-Knowledge-graph-from-text/test_data"
+		}
+	],
+	"settings": {}
+}
