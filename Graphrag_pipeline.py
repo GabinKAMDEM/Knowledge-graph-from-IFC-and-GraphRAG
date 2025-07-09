@@ -1,26 +1,3 @@
-# neo4j_graphrag_pipeline.py
-"""
-Pipeline complet : ingestion d'un fichier IFC dans Neo4j + interrogation GraphRAG
-(compatible Neo4j 5.12+ avec index vectoriel natif)
-
-Correctif : évite l'erreur
-```
-neo4j.exceptions.CypherTypeError: Property values can only be of primitive types ... Encountered: Map{}
-```
-— on sérialise désormais le dictionnaire de propriétés en **JSON string**, autorisé par Neo4j (type `String`).
-
-Dépendances :
-```bash
-pip install ifcopenshell neo4j openai python-dotenv
-```
-
-Usage :
-```bash
-python neo4j_graphrag_pipeline.py model.ifc "Où se trouve le lavabo R+1 ?"
-```
-"""
-
-from __future__ import annotations
 import os
 import sys
 import json
